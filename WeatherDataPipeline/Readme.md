@@ -1,7 +1,7 @@
 # Weather Data Pipeline with Python and PostgreSQL
 
 ## Project Overview
-<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/e32d0df1-1b95-4c97-b1db-b9aa3c7069c1" />
+<img width="400" height="300" alt="image" src="https://github.com/dsmlai2025/Data_Engineering/blob/main/WeatherDataPipeline/RideShareWeather.jpg" />
 
 Ridefy would like to develop an ETL pipeline to integrate weather information into its route optimization, fleet management, demand forecasting, and dynamic pricing systems. 
 This project aims to enhance decision-making by incorporating real-time and historical weather data, enabling Ridefy to improve operational efficiency 
