@@ -14,35 +14,42 @@ In this project, you have been tasked with creating a data pipeline for the anal
 You will be working with two data sources: grocery sales and complementary data. You have been provided with the grocery_sales table in PostgreSQL database with the following features:
 
 *grocery_sales*
-"index" - unique ID of the row
-"Store_ID" - the store number
-"Date" - the week of sales
-"Weekly_Sales" - sales for the given store
+
+
+| index |  unique ID of the row |
+|----| -----|
+| Store_ID |  the store number |
+| Date | the week of sales |
+| Weekly_Sales | sales for the given store |
 
 Also, you have the extra_data.parquet file that contains complementary data:
 
 *extra_data.parquet*
-"IsHoliday" - Whether the week contains a public holiday - 1 if yes, 0 if no.
-"Temperature" - Temperature on the day of sale
-"Fuel_Price" - Cost of fuel in the region
-"CPI" – Prevailing consumer price index
-"Unemployment" - The prevailing unemployment rate
-"MarkDown1", "MarkDown2", "MarkDown3", "MarkDown4" - number of promotional markdowns
-"Dept" - Department Number in each store
-"Size" - size of the store
-"Type" - type of the store (depends on Size column)
+
+|col | Descr |
+|---|---|
+| IsHoliday | Whether the week contains a public holiday - 1 if yes, 0 if no. |
+| Temperature | Temperature on the day of sale|
+| Fuel_Price | Cost of fuel in the region|
+| CPI" | Prevailing consumer price index|
+| Unemployment" | The prevailing unemployment rate|
+| MarkDown1", "MarkDown2", "MarkDown3", "MarkDown4" | number of promotional markdowns|
+| Dept | Department Number in each store|
+| Size | size of the store | 
+| Type |  type of the store (depends on Size column) | 
 
 **Task**
 
 You will need to merge those files and perform some data manipulations. 
 The transformed DataFrame can then be stored as the clean_data variable containing the following columns:
 
-| "Store_ID" |
-| "Month" |
-| "Dept" |
-| "IsHoliday" |
-| "Weekly_Sales" |
-| "CPI" |
+| Store_ID |
+|----|
+| Month |
+| Dept |
+| IsHoliday |
+| Weekly_Sales |
+| CPI |
 | ""Unemployment"" |
 
 After merging and cleaning the data, you will have to analyze monthly sales of Walmart and store the results of your analysis as the agg_data variable that should look like:
